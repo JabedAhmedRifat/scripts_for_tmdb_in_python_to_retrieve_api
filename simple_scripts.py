@@ -5,7 +5,8 @@ from datetime import datetime, timedelta
 api_key = "b1c6b1d4eee69018389a08305b8e88cd"
 
 
-base_url = "https://api.themoviedb.org/3/movie/top_rated?language=en-US"
+base_url = "https://api.themoviedb.org/3/find/tt1475582?external_source=imdb_id"
+
 
 
 end_date = datetime.now().date()
