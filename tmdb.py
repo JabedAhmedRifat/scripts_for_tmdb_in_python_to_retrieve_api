@@ -8,7 +8,7 @@ base_url = "https://api.themoviedb.org/3/discover/movie?language=en-US&region=IN
 
 end_date = datetime.now().date()
 
-start_date = end_date - timedelta(days=1)
+start_date = end_date - timedelta(days=7) 
 
 page = 1
 max_pages = 10
@@ -19,8 +19,8 @@ while page <= max_pages:
         "api_key": api_key,
 
         "page": page,
-        # "primary_release_date.gte": start_date,
-        # "primary_release_date.lte": end_date,
+        "primary_release_date.gte": None,  
+        "primary_release_date.lte": start_date,
     
     }
 
