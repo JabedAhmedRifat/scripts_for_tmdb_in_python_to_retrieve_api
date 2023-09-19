@@ -19,8 +19,8 @@ while page <= max_pages:
         "api_key": api_key,
 
         "page": page,
-        "primary_release_date.gte": start_date,
-        "primary_release_date.lte": end_date,
+        # "primary_release_date.gte": start_date,
+        # "primary_release_date.lte": end_date,
     
     }
 
