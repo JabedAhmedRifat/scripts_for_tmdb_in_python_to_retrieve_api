@@ -20,8 +20,6 @@ params = {
     "primary_release_date.lte": start_date,
     
     }
-    
-
 response = requests.get(base_url, params=params)
 
 if response.status_code == 200:
